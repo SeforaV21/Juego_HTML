@@ -1,0 +1,35 @@
+body{ background-color: black; 
+}
+
+
+.background    { background: rgb(52, 166, 251);
+                background-image: url(universo.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+
+.background td { padding: 0;          }
+.lava          { background-image: url(Llamas-fuego.jpg); background-repeat: no-repeat;
+                background-size: cover;}
+.wall          { background-color:rgb(12, 73, 204); background-repeat: no-repeat;
+                background-size: cover;}
+
+.actor  { position: absolute;  }
+.coin   { background-color: gold; }
+.player { background-image: url(images.png); background-repeat: no-repeat;
+                background-size: cover;}
+
+.game {
+  overflow: hidden;
+  max-width: 1650px;
+  max-height: 750px;
+  position: relative;
+}
+
+.lost .player {
+  background: rgb(242, 31, 3);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
