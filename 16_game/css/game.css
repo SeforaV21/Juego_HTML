@@ -31,7 +31,7 @@ body{ background-color: black;
 .lost .player {
   background-image: url(65.jpg); background-repeat: no-repeat;
                 background-size: cover;}
-}
+                
 .won .player {
   box-shadow: -4px -7px 8px white, 4px -7px 8px white;
 }
