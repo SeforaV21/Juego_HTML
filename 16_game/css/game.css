@@ -3,7 +3,7 @@ body{ background-color: black;
 
 
 .background    { background: rgb(52, 166, 251);
-                background-image: url(universo.jpg);
+                background-image: url(az.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                  table-layout: fixed;
@@ -12,12 +12,13 @@ body{ background-color: black;
 .background td { padding: 0;          }
 .lava          { background-image: url(Llamas-fuego.jpg); background-repeat: no-repeat;
                 background-size: cover;}
-.wall          { background-color:rgb(12, 73, 204); background-repeat: no-repeat;
+.wall          { background-image: url(cu.jpg); background-repeat: no-repeat;
                 background-size: cover;}
 
 .actor  { position: absolute;  }
-.coin   { background-color: gold; }
-.player { background-image: url(images.png); background-repeat: no-repeat;
+.coin   { background-image: url(star.jpg); background-repeat: no-repeat;
+                background-size: cover; }
+.player { background-image: url(64.jpg); background-repeat: no-repeat;
                 background-size: cover;}
 
 .game {
@@ -28,7 +29,8 @@ body{ background-color: black;
 }
 
 .lost .player {
-  background: rgb(242, 31, 3);
+  background-image: url(65.jpg); background-repeat: no-repeat;
+                background-size: cover;}
 }
 .won .player {
   box-shadow: -4px -7px 8px white, 4px -7px 8px white;
