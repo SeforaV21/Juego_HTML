@@ -1,4 +1,4 @@
-body{ background-color: black; 
+body{ background-color: rgb(7, 3, 3); 
 }
 
 
@@ -34,4 +34,27 @@ body{ background-color: black;
                 
 .won .player {
   box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+
+.stats{
+     list-style-type: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: bisque;
+  z-index: 10;
+  position: absolute;
+  text-align: left;
+  margin-top: 40px;
+}
+.statss{
+   list-style-type: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: bisque;
+  z-index: 10;
+  position: absolute;
+  text-align: left;
+  margin-top: 80px;
 }

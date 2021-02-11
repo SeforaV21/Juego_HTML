@@ -328,7 +328,7 @@ function runAnimation(frameFunc) {
 }
 
 function runLevel(level, Display) {
-  let display = new Display(document.body, level);
+  let display = new Display(document.getElementById("wgame"), level);
   let state = State.start(level);
   let ending = 1;
   return new Promise(resolve => {
@@ -349,11 +349,24 @@ function runLevel(level, Display) {
   });
 }
 
-async function runGame(plans, Display) {
-  for (let level = 0; level < plans.length;) {
-    let status = await runLevel(new Level(plans[level]),
-                                Display);
-    if (status == "won") level++;
+async function runGame(plans, Display){
+  let lives=5;
+  this.livesView=document.getElementById("vidas");
+  for(let level =0; level<plans.length && this.lives<0;){
+    let status = await runLevel(new Level(plans[level]),Display);
+
+    if(status=="won"){
+      level++;
+    }else{
+      lives--;
+      this.livesView.innerHTML="Vidas:5"+ lives;
+    }
   }
-  console.log("You've won!");
-}
+  if(lives < 0){
+    console.log("GAME OVER");
+    document.location.reload();
+  }
+  else{
+    console.log("you win");
+    document.location.reload();
+  }}
